@@ -23,6 +23,6 @@ function mostrarBomba(){
         
     }
     alert("Game Over")
-
+    
 
 }
