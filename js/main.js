@@ -5,6 +5,7 @@ var nDos = document.getElementsByClassName("nDos");
 var vacia = document.getElementsByClassName("vacia");
 var vacio = document.getElementsByClassName("vacio");
 var celdas = document.getElementsByTagName("th");
+var boton = document.getElementById("boton");
 var longitud = btnExplotar.length;
 
 for(var i = 0; i < vacia.length; i++){ 
@@ -54,7 +55,7 @@ function mostrarBomba(){
       alert("Game Over");  
     },300);
     
-    event.stopImmediatePropagation();
+   // event.stopImmediatePropagation();
     sinClick();
 
 }
@@ -69,4 +70,10 @@ function sinClick(){
         celdas[i].removeEventListener("click", mostrarColor);
     }
     
+}
+
+
+boton.addEventListener("click", reiniciarJuego);
+function reiniciarJuego(){
+  window.location.reload();
 }
