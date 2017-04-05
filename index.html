@@ -5,38 +5,38 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <label>Buscaminas</label>
-    <table border="2">
-        <tr>
-            <th ><button>2</button></th>
-            <th><button>2</button></th>
-            <th><button>2</button></th>
-            <th class="bomba"><button class="explotar"></button></th>
-        </tr>
-        <tr>
-            <th class="bomba"><button class="explotar"></button></th>
-            <th class="bomba"><button class="explotar"></button></th>
-            <th><button>2</button></th>
-            <th><button>1</button></th>
-        </tr>
-        <tr>
-            <th><button>2</button></th>
-            <th><button>2</button></th>
-            <th><button>2</button></th>
-            <th><button>1</button></th>
-        </tr>
+    <section align="center">
+        <h1>Buscaminas</h1>
+        <table border="2"  align="center">
+            <tr>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="bomba" width="50px" height="50px"><button class="explotar"></button></th>
+            </tr>
+            <tr>
+                <th class="bomba" width="50px" height="50px"><button class="explotar"></button></th>
+                <th class="bomba" width="50px" height="50px"><button class="explotar"></button></th>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="nUno" width="50px" height="50px"><button></button></th>
+            </tr>
+            <tr>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="nDos" width="50px" height="50px"><button></button></th>
+                <th class="nUno" width="50px" height="50px"><button></button></th>
+            </tr>
 
-        <tr>
-            <th><button>blanco</button></th>
-            <th><button>blanco</button></th>
-            <th><button>1</button></th>
-            <th class="bomba" ><button class="explotar"></button></th>
-        </tr>
-
-
-    </table>
-
-
+            <tr>
+                <th class="vacio" width="50px" height="50px"><button class="vacia">blanco</button></th>
+                <th class="vacio" width="50px" height="50px"><button class="vacia">blanco</button></th>
+                <th class="nUno" width="50px" height="50px"><button></button></th>
+                <th class="bomba" width="50px" height="50px"><button class="explotar"></button></th>
+            </tr>
+        </table>
+        <br>
+        <input type="button" id="boton" value="Reiniciar"/>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
